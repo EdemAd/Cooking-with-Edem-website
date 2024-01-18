@@ -1,0 +1,292 @@
+
+:root
+{
+
+--palette-White:white;
+--palette-fontWhite: whitesmoke;
+--palette-fontLightBlue:rgba(137, 195, 249, 0.611); 
+--palette-fontRoyalBlue: royalblue;
+--palette-Coral: coral; 
+
+
+--palette-fontDark: rgba(7, 1, 1, 0.986) ;
+--palette-fontGrey: rgba(119,119,119,0.5);
+
+}
+
+:root{
+--colorWhite: var(--palette-White);
+--colorWhiteFont: var(--palette-fontWhite);
+--colorLightBlue: var(--palette-fontLightBlue); 
+--colorRoyalBlue: var(--palette-fontRoyalBlue);
+--colorCoral: var(--palette-Coral);
+}
+  
+  
+@media (prefers-color-scheme: dark){
+:root{
+    --colorWhite: var(--palette-fontDark);
+    --colorWhiteFont:var(var(--palette-fontWhite));
+    --colorLightBlue: var(--palette-fontGrey); 
+    --colorRoyalBlue: var(--palette-fontLightBlue);
+    --colorCoral: var(--palette-Coral); 
+}
+}
+
+
+html {
+
+    background-color: var(--colorWhite);
+    /*font-family: 'Mooli', sans-serif;*/
+    font-family: 'Rowdies',cursive;
+    padding: 0%;
+    margin: 0;
+}
+
+body {
+    
+    margin-bottom: 0;
+    padding: 0;
+    height: 100%;
+    color: var(--colorRoyalBlue);
+}
+
+
+#icon {
+    border-radius: 50%;
+}
+
+a {
+    color: inherit;
+}
+
+header {
+
+    background-color: var(--colorLightBlue);
+    text-align: left;
+    padding-top: 0px;
+    margin: 0px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    box-shadow: 0px 15px 5px -15px #111;  
+}
+
+header h1 {
+    
+    font-size: xx-large;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 75px;
+    color: var(--palette-fontWhite);
+}
+
+nav {
+    background-image: url(../img/kitchen_banner.jpg);
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    
+}
+
+header img {
+
+    margin-top: -15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    
+}
+
+nav li {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin-left: 75px;
+    font-size: larger;
+    
+}
+
+nav a {
+    color: var(--colorRoyalBlue);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    
+    color: var(--colorWhiteFont);
+}
+
+h1 {
+    color: var(--colorCoral);
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+#presentation img {
+    width: 100%;
+}
+
+#welcom h2 {
+
+    font-size: medium;
+    color: var(--colorRoyalBlue);
+
+}
+
+#welcom {
+    color: var(--colorRoyalBlue);
+    padding-left: 40px;
+    text-align: center;
+}
+
+#welcom a:hover {
+    color: var(--colorCoral);
+}
+
+footer {
+    background-color: var(--colorLightBlue);
+    margin-bottom: 0%;
+    width: 100%;
+    padding-bottom: 15px;
+    
+    bottom: 0;
+    left: 0;
+    color: var(--colorRoyalBlue);
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 30px;
+    
+    
+}
+
+footer li {
+
+    list-style-type: none;
+    display: inline;
+    text-align: right;
+    
+}
+
+.mentions {
+    text-align: center;
+}
+
+
+.mentions img {
+
+    height: 50px;
+    width: 50px;
+
+}
+
+.mentions li {
+    margin-right: 100px;
+}
+
+
+#recipe img {
+
+    width: 100%;
+    
+}
+
+#bakery ol {
+    text-align: center;
+    list-style-position: inside;
+   
+}
+
+#bakery img {
+    width: 75px;
+    height: 75px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+    margin-bottom: -25px;
+}
+
+#bakery li {
+
+    margin-bottom: 100px;
+}
+
+#setup {
+
+    margin-left: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+main {
+
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+#sub {
+    margin-top: 225px;
+}
+
+.form {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.fieldset {
+    width: 300px;
+    margin: auto;
+}
+
+#sub_btn {
+    margin-top: 15px;
+    border-radius: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    border: 3px;
+    border-style: solid;
+    border-color: var(--colorRoyalBlue);
+    color: var(--colorCoral);
+    font-size: large;
+    font-family:'Rowdies', cursive; ;
+    width: 150px;
+    height: 40px;
+}
+
+#table {
+    text-align: center;
+    margin: 0 auto;
+
+    border-style: solid;
+}
+
+th {
+    border-style: solid ;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+td {
+    border-style: solid;
+    color: var(--colorCoral);
+}
+
+
+input[type="button"]{
+    cursor: pointer;
+}
+
+
